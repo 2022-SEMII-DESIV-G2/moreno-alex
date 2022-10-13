@@ -12,8 +12,8 @@ function papitas(){
     if(typeof letras != 'string'){
     }
     let conteo = {};
-    letras.toString().replace(/\S/g, function(p) {
-        conteo[p] = (isNaN(conteo[p]) ? 1 : conteo[p] + 1);
+    letras.toString().replace(/\S/g, function(a) {
+        conteo[a] = (isNaN(conteo[a]) ? 1 : conteo[a] + 1);
     });
     document.getElementById("limpiar").style.visibility = "visible";
     var r;
